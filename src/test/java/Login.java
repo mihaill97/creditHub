@@ -6,9 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.Select;
 
-import static org.junit.Assert.assertEquals;
 
 public class Login {
     private WebDriver driver;
@@ -20,11 +18,9 @@ public class Login {
          driver = new ChromeDriver();
         //ссылка на хаб
         driver.get("https://credithub.ru/");
+        driver.manage().window().maximize();
     }
-    @After
-    public void cleanUp(){
-        driver.quit();
-    }
+
 // тест на авторизацию пользователя
     @Test
     public void loginAk () throws InterruptedException {
@@ -82,6 +78,7 @@ public class Login {
         WebElement buttonInstant = driver.findElement(By.xpath("/html/body/div[1]/header/div[3]/div[1]"));
         buttonInstant.click();
         Thread.sleep(2000);
+
         WebElement LastName = driver.findElement(By.id("father_name"));
         LastName.sendKeys("Тестовиич");
         WebElement dateBirth = driver.findElement(By.id("user-birth_date"));
@@ -152,5 +149,9 @@ public class Login {
         WebElement journalPages = driver.findElement(By.xpath("/html/body/div[1]/header/div[2]/ul/li[6]/a"));
         journalPages.click();
 
+    }
+    @After
+    public void cleanUp(){
+        driver.quit();
     }
 }
