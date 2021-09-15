@@ -50,5 +50,19 @@ public class CredithubTests extends ChromeSettings {
         headerPage.clickPayment();
         headerPage.clickJournalPages();
     }
+    @Test
+    public void InstantCredit()throws InterruptedException{
+        MainPage mainPage = new MainPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        ProfilePage profilePage = new ProfilePage(driver);
+        mainPage.clickEnterButton();
+        //Login page
+        loginPage.typeData();
+        loginPage.clickButtonEnter();
+        Thread.sleep(1000);
+        profilePage.clickButtonInstant();
+        System.out.println(driver.getCurrentUrl());
+        System.out.println(driver.getTitle());
+    }
 
 }
