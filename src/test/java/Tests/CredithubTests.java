@@ -11,11 +11,9 @@ public class CredithubTests extends ChromeSettings {
         LoginPage loginPage = new LoginPage(driver);
         HeaderPage headerPage = new HeaderPage(driver);
         mainPage.clickEnterButton();
-        //Login page
         loginPage.typeData();
         loginPage.clickButtonEnter();
         Thread.sleep(1000);
-        //Profile Page
         headerPage.ClickDropMenu();
         headerPage.ClickLogout();
     }
@@ -56,7 +54,6 @@ public class CredithubTests extends ChromeSettings {
         LoginPage loginPage = new LoginPage(driver);
         ProfilePage profilePage = new ProfilePage(driver);
         mainPage.clickEnterButton();
-        //Login page
         loginPage.typeData();
         loginPage.clickButtonEnter();
         Thread.sleep(1000);
@@ -64,5 +61,4 @@ public class CredithubTests extends ChromeSettings {
         System.out.println(driver.getCurrentUrl());
         System.out.println(driver.getTitle());
     }
-
 }

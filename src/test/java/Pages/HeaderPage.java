@@ -18,9 +18,9 @@ public class HeaderPage {
         By kreditCards = By.xpath("/html/body/div[1]/header/div[2]/ul/li[1]/ul/li[3]/a");
         By debetCards = By.xpath("/html/body/div[1]/header/div[2]/ul/li[1]/ul/li[4]/a");
         By zaimyYR = By.xpath("/html/body/div[1]/header/div[2]/ul/li[1]/ul/li[5]/a");
-        By payMent = By.xpath("/html/body/div[1]/header/div[2]/ul/li[3]/a");
-        By creditScore = By.xpath("/html/body/div[1]/header/div[2]/ul/li[5]/a");
-        By journalPages = By.xpath("/html/body/div[1]/header/div[2]/ul/li[6]/a");
+        By payMent = By.xpath("//*[@id=\"navMenu\"]/li[3]/a");
+        By creditScore = By.xpath("//*[@id=\"navMenu\"]/li[4]/a");
+        By journalPages = By.xpath("//*[@id=\"navMenu\"]/li[5]/a");
 
 
 
