@@ -22,6 +22,9 @@ public class RegistrationPage {
         driver.findElement(passField).sendKeys("7991cmvw");
         driver.findElement(rePass).sendKeys("7991cmvw");
     }
+    public void typeNegativeData(){
+
+    }
     public void clickButtonReeg(){
         driver.findElement(buttonReeg).click();
     }
