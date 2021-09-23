@@ -20,7 +20,7 @@ public class CredithubTests extends ChromeSettings {
     @Test
     public void Registration() throws InterruptedException{
         MainPage mainPage = new MainPage(driver);
-        RegistrationPage registrationPage = new RegistrationPage(driver);
+        FirstStepRegistrationPage registrationPage = new FirstStepRegistrationPage(driver);
         ProfilePage profilePage = new ProfilePage(driver);
         SecondStepRegistration secondStepRegistration = new SecondStepRegistration(driver);
         mainPage.clickButtonReg();
