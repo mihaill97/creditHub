@@ -1,10 +1,10 @@
 package Tests;
 
-import Pages.LoginPage;
+import Pages.*;
 import Pages.MainPage;
 import Settings.ChromeSettings;
 import org.junit.Test;
-import static org.junit.Assert.assertEquals;
+
 public class CreditHubNegative extends ChromeSettings {
     @Test
     //негативный тест на авторизацию с невалидными данными (используя незарегистрированный имэйл и пароль)
