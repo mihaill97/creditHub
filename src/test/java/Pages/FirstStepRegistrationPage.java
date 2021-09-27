@@ -23,6 +23,11 @@ public class FirstStepRegistrationPage {
         driver.findElement(rePass).sendKeys("7991cmvw");
     }
     public void typeNegativeData(){
+        driver.findElement(nameField).sendKeys("Теdfст");
+        driver.findElement(lastnameField).sendKeys("Тестоfsdfsdвич");
+        driver.findElement(emailField).sendKeys("Teeefdsfsdsst@gmail.com");
+        driver.findElement(passField).sendKeys("7991cmvw");
+        driver.findElement(rePass).sendKeys("7991cmvw");
 
     }
     public void clickButtonReeg(){

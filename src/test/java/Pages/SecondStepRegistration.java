@@ -39,6 +39,21 @@ public class SecondStepRegistration {
         driver.findElement(street).sendKeys("пр-кт Вернадского");
         driver.findElement(numHouse).sendKeys("д 4");
     }
+    public void typeNegativeData(){
+        driver.findElement(LastName).sendKeys("Тестоfdsfвиич");
+        driver.findElement(dateBirth).sendKeys("11111fsdf997");
+        driver.findElement(phoneNumb).sendKeys("000000000");
+        driver.findElement(userSalary).sendKeys("50000");
+        driver.findElement(userPassport).sendKeys("1123-00002132");
+        driver.findElement(codePassport).sendKeys("0-001");
+        driver.findElement(placeBirth).sendKeys("Моdsfsсква");
+        driver.findElement(datePassport).sendKeys("11112020");
+        driver.findElement(issuedPassport).sendKeys("МВ ПДЫГЕЯ");
+        driver.findElement(region).sendKeys("Москfdsfва");
+        driver.findElement(city).sendKeys("г Мосfdsква");
+        driver.findElement(street).sendKeys("пр-кт Веfdsfsрнадского");
+        driver.findElement(numHouse).sendKeys("д 324234");
+    }
     public void clickAcceptInfo (){
         driver.findElement(acceptInfo).click();
     }

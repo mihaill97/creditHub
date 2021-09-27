@@ -17,6 +17,7 @@ public class CredithubTests extends ChromeSettings {
         headerPage.ClickDropMenu();
         headerPage.ClickLogout();
     }
+    //перед запуском автотеста на регистрацию , проверить наличие аккаунта Teeesst@gmail.com в админке
     @Test
     public void Registration() throws InterruptedException{
         MainPage mainPage = new MainPage(driver);
