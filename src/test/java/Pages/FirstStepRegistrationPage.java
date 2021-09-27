@@ -13,7 +13,7 @@ public class FirstStepRegistrationPage {
     By emailField = By.id("email");
     By passField = By.id("password");
     By rePass = By.id("password_confirmation");
-    By buttonReeg = By.xpath("/html/body/div[1]/div/div/div[2]/div/div[2]/form/button");
+    By buttonReeg = By.xpath("//button[@class='btn btn-1 btn_blue']");
 
     public void typeData(){
         driver.findElement(nameField).sendKeys("Тест");

@@ -8,8 +8,8 @@ public class MainPage {
     public MainPage(WebDriver driver) {
         this.driver = driver;
     }
-    By enterButton = By.xpath("/html/body/div[1]/header/div[3]/a[1]");
-    By buttonReg = By.xpath("/html/body/div[1]/header/div[3]/a[2]");
+    By enterButton = By.xpath("//a[@class='user-panel__log-link']");
+    By buttonReg = By.xpath("//a[text() = ('Регистрация')]");
 
     public void clickEnterButton(){
         driver.findElement(enterButton).click();

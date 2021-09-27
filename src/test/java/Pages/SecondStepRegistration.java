@@ -21,8 +21,8 @@ public class SecondStepRegistration {
     By city = By.id("registration_city");
     By street = By.id("registration_street");
     By numHouse = By.id("registration_housenum");
-    By acceptInfo = By.xpath("//*[@id=\"personal_data_form\"]/div[11]");
-    By buttonContinue = By.xpath("//*[@id=\"personal_data_form\"]/div[12]/button");
+    By acceptInfo = By.xpath("//input[@name='agree_with_terms']");
+    By buttonContinue = By.xpath("//button[@class='btn btn-1 btn_blue form-btn change-request-submit-YT']");
 
     public void typeData (){
         driver.findElement(LastName).sendKeys("Тестовиич");

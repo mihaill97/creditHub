@@ -10,17 +10,17 @@ public class HeaderPage {
         public HeaderPage(WebDriver driver) {
             this.driver = driver;
         }
-        By dropMenu = By.xpath("/html/body/div[1]/header/div[3]/div[3]");
+        By dropMenu = By.xpath("//div[@class='user-panel__dropdown user-panel__dropdown--header user-dropdown']");
         By logout = By.xpath("//*[@id=\"right-user-menu\"]/div/ul/li[6]");
-        By kredity = By.xpath("/html/body/div[1]/header/div[2]/ul/li[1]/span");
-        By microzaim = By.xpath("/html/body/div[1]/header/div[2]/ul/li[1]/ul/li[1]/a");
-        By potrebKredit = By.xpath("/html/body/div[1]/header/div[2]/ul/li[1]/ul/li[2]/a");
-        By kreditCards = By.xpath("/html/body/div[1]/header/div[2]/ul/li[1]/ul/li[3]/a");
-        By debetCards = By.xpath("/html/body/div[1]/header/div[2]/ul/li[1]/ul/li[4]/a");
-        By zaimyYR = By.xpath("/html/body/div[1]/header/div[2]/ul/li[1]/ul/li[5]/a");
-        By payMent = By.xpath("//*[@id=\"navMenu\"]/li[3]/a");
-        By creditScore = By.xpath("//*[@id=\"navMenu\"]/li[4]/a");
-        By journalPages = By.xpath("//*[@id=\"navMenu\"]/li[5]/a");
+        By kredity = By.xpath("//span[@class='navigation-menu__link navigation-menu__link--has-submenu']");
+        By microzaim = By.xpath("//a[@class='submenu__link' and contains(text(),'Микрозаймы')]");
+        By potrebKredit = By.xpath("//a[@class='submenu__link' and contains(text(),'Потребительские')]");
+        By kreditCards = By.xpath("//a[@class='submenu__link' and contains(text(),'Кредитные карты')] ");
+        By debetCards = By.xpath("//a[@class='submenu__link' and contains(text(),'Дебетовые карты')] ");
+        By zaimyYR = By.xpath("//a[@class='submenu__link' and contains(text(),'Займы для юридических лиц')] ");
+        By payMent = By.xpath("//a[@class='navigation-menu__link' and contains(text(),'Оплата кредита')]");
+        By creditScore = By.xpath("//a[@class='navigation-menu__link' and contains(text(),'Кредитный')]");
+        By journalPages = By.xpath("//a[@class='navigation-menu__link' and contains(text(),'Статьи')]");
 
 
 

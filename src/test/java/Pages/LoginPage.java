@@ -10,7 +10,7 @@ public class LoginPage {
     }
     By loginField = By.xpath("//*[@id=\"email\"]");
     By passField = By.xpath("//*[@id=\"password\"]");
-    By buttonEnter = By.xpath("/html/body/div[1]/div/div/div[2]/div/div[2]/form/button");
+    By buttonEnter = By.xpath("//button[@class='btn btn-1 btn_blue']");
     //валидации
     By validationEmail = By.xpath("/html/body/div[1]/div/div/div[2]/div/div[2]/form/div[1]/p");
 
